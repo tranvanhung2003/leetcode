@@ -2,6 +2,7 @@
  * @param {number[]} nums
  * @return {number[]}
  */
+ 
 var transformArray = function (nums) {
   let count = 0;
 
