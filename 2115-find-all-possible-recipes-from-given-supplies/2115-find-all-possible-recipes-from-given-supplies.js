@@ -38,13 +38,13 @@ var findAllRecipes = function (recipes, ingredients, supplies) {
         continue;
       }
 
-      if (!hasRecipe(ingredient, set)) {
+      if (!hasRecipe(ingredient, new Set(set))) {
         setNo.add(ingredient);
 
         return false;
-      } else {
-        setYes.add(ingredient);
       }
+
+      setYes.add(ingredient);
     }
 
     setYes.add(recipe);
